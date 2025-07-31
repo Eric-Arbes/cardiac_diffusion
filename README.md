@@ -16,7 +16,7 @@ Step by step guide on how to get some initial images:
 
 1. Make sure SequenceGenerationV1, Data Reconstruction V1, directions.m and grappa.m are present in your directory.
 2. Leave the parameters in SequenceGenerationV1 unchanged if you don't want to adapt the data reconstruction code and generate three different sequence files by changing the "part" variable in line 65.
-3. Run the sequence at your scanner and export the raw data.
+3. Run the sequence at your scanner and export the raw data. Note that a ecg trigger signal is required for the sequence to advance, meaning that a synthetic signal should be set at the scanner if phantoms or volunteers without ecg applied are measured.
 4. Provide the raw data directory and one of the generated sequences at the start of DataReconstructionV1. Change "numberofaverages" to how many times you ran all sequence parts for averaging.
 5. Make sure your raw data directory features the nested subfolders "temp" and "temp2" (This is a legacy step that will be unneeded in the next update)
 6. Running the code will yield he b0 and directional images for all slices
