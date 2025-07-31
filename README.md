@@ -5,7 +5,7 @@ The provided MATLAB code requires the open-source pulse sequence framework Pulse
 The file "directions.mat" contains example diffusion directions but can be replaced with any desired q-space sampling scheme.
 No guarantees regarding compatability of generated files with any hardware or the suitability for use on volunteers/phantoms/patients are made.
 Special Thanks go to Prof. Dr. Maxim Zaitsev and the rest of the Pulseq team for assisting with development. The grappa reconstruction MATLAB file created
-by Marh Chiew https://github.com/mchiew/grappa-tools is required to run the reconstruction.
+by Mark Chiew https://github.com/mchiew/grappa-tools is required to run the reconstruction.
 
 Questions regarding the project can be addressed to eric.arbes@uniklinik-freiburg.de
 
