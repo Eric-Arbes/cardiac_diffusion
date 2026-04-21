@@ -77,7 +77,6 @@ directions = directions.coords;      %any direction schemes may be inserted here
 B0= 2.89; % 1.5 2.89 3.0
 sat_ppm=-3.45;
 sat_freq=sat_ppm*1e-6*B0*lims.gamma;
-sat_freq = -407.0; %siemens value from idea
 rf_fs = mr.makeGaussPulse(110*pi/180,'system',lims,'Duration',8e-3,...
     'bandwidth',abs(sat_freq),'freqOffset',sat_freq);
 gz_fs = mr.makeTrapezoid('z',lims,'delay',mr.calcDuration(rf_fs),'Area',1/1e-4); % spoil up to 0.1mm
